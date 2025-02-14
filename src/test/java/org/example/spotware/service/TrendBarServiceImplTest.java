@@ -35,9 +35,7 @@ class TrendBarServiceImplTest {
     }
 
     private void sendQuote(BigDecimal price, String symbol, Instant timestamp) throws ExecutionException, InterruptedException {
-        Quote quote = new Quote(price, symbol, timestamp);
-        CompletableFuture<Boolean> future = service.getQuote(quote);
-        future.get();
+        service.getQuote(new Quote(price, symbol, timestamp)).get();
     }
 
     @Test
