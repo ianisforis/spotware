@@ -14,4 +14,5 @@ interface TrendBarService {
 
     Set<TrendBar> getTrendBars(String symbol, TrendBarPeriod period, Instant from, Instant to);
 
+    void shutdown();
 }

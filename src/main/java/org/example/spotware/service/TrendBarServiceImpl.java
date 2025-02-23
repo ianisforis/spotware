@@ -177,6 +177,7 @@ public class TrendBarServiceImpl implements TrendBarService {
         });
     }
 
+    @Override
     @PreDestroy
     public void shutdown() {
         executor.shutdown();

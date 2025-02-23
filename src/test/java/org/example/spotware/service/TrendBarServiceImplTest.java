@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class TrendBarServiceImplTest {
 
-    private TrendBarServiceImpl service;
+    private TrendBarService service;
 
     @BeforeEach
     void setUp() {
